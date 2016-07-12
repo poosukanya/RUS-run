@@ -19,7 +19,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/signup"
+            android:text="signin"
             android:id="@+id/button"
             android:layout_weight="1" />
 
@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:text="@string/signup"
             android:id="@+id/button2"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:onClick="clickSignUpMain" />
     </LinearLayout>
 </RelativeLayout>
