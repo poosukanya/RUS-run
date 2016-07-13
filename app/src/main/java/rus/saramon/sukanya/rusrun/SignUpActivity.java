@@ -14,6 +14,7 @@ public class SignUpActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton avata0RadioButton, avata1RadioButton,
             avata2RadioButton, avata3RadioButton, avata4RadioButton;
+    private  String nameString, userString, passwordString, avataString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,24 @@ public class SignUpActivity extends AppCompatActivity {
     }   //Main Method
 
     public void clickSingnUpSign(View view) {
+
+        //Get Value from Edit Text
+        nameString = nameEditText.getText().toString().trim();
+        nameString = userEditText.getText().toString().trim();
+        passwordString = passwordEditText.getText().toString().trim();
+
+        //Check Space
+        if (nameString.equals("") || userString.equals("") || passwordString.equals("")) {
+
+            MyAlert myAlert = new MyAlert();
+            myAlert.myDialog(this, "มีช่องว่าง", "กรุณากรอกทุกช่อง คะ");
+
+
+
+
+        }
+
+
 
     }   //clickSignUp
 
