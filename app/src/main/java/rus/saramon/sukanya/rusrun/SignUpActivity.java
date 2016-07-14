@@ -133,7 +133,7 @@ public class SignUpActivity extends AppCompatActivity {
                 avata1RadioButton.isChecked() ||
                 avata2RadioButton.isChecked() ||
                 avata3RadioButton.isChecked() ||
-                avata4RadioButton.isChecked() ||;
+                avata4RadioButton.isChecked() ;
 
 
 
